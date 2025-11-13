@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Custom transitions */
+.transition-all {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* File upload styles */
+.file-upload {
+    border: 2px dashed #cbd5e0;
+    transition: border-color 0.2s;
+}
+
+.file-upload:hover {
+    border-color: #4299e1;
+}
+
+.file-upload.dragging {
+    border-color: #4299e1;
+    background-color: rgba(66, 153, 225, 0.05);
+}
+
+/* Priority badge styles */
+.priority-badge {
+    @apply px-3 py-1 rounded-full text-xs font-medium;
+}
+
+.priority-badge.urgent {
+    @apply bg-red-100 text-red-800;
+}
+
+.priority-badge.standard {
+    @apply bg-blue-100 text-blue-800;
+}
